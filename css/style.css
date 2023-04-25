@@ -38,6 +38,56 @@
     display: flex;
     min-height: 70vh;
 }
+.main-index{
+    flex-wrap: wrap;
+}
+.main-contacto form{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+}
+.seccion-1{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccion-1 img{
+    width: 400px;
+    padding: 10px;
+}
+.seccion-1 p{
+    width: 400px;
+    padding: 10px;
+
+}
+h2{
+    text-align: center;
+    padding: 15px;
+}
+.seccion-2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.seccion-2 img{
+    width: 400px;
+    padding: 10px;
+}
+.seccion-2 p{
+    width: 400px;
+    padding: 10px;
+
+}
+
+
 @media (max-width: 519px){
     .header{
         justify-content: center;
