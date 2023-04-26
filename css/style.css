@@ -11,6 +11,10 @@
     min-height: 20vh;
     flex-wrap: wrap;
 }
+.nav ul a:hover{
+    color: rgb(196, 133, 56);
+    transition: 0.3s;
+}
 .header a img{
     width: 120px;
 }
@@ -37,9 +41,9 @@
 .main{
     display: flex;
     min-height: 70vh;
-}
-.main-index{
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .main-contacto form{
     display:flex;
