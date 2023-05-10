@@ -1,31 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Signika Negative', sans-serif;
-}
-
 .header {
-  background-color: #87b091;
-}
+  background-color: #87b091; }
+  .header nav {
+    display: flex;
+    align-items: flex-end; }
+  .header img {
+    height: 200px;
+    width: 200px; }
 
 .nav-item:hover:hover {
   transform: scale(1.25);
-  transition: 0.3s;
-}
-
-.header nav {
-  display: flex;
-  align-items: flex-end;
-}
-
-.header img {
-  height: 200px;
-  width: 200px;
-}
-
-h1 {
-  background-color: #c4d4ab;
-}
+  transition: 0.3s; }
 
 .footer {
   display: flex;
@@ -33,18 +17,13 @@ h1 {
   color: white;
   min-height: 10vh;
   justify-content: center;
-  align-items: center;
-}
-
-.footer .sociales {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-.footer .sociales li {
-  display: inline-block;
-}
+  align-items: center; }
+  .footer .sociales {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center; }
+    .footer .sociales li {
+      display: inline-block; }
 
 .main-inicio {
   display: flex;
@@ -52,8 +31,7 @@ h1 {
   min-height: 70vh;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .main-ejercicios {
   display: flex;
@@ -61,8 +39,7 @@ h1 {
   min-height: 70vh;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .main-anatomia {
   display: flex;
@@ -70,13 +47,7 @@ h1 {
   min-height: 70vh;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
-
-.iframe {
-  width: 450px;
-  height: 300px;
-}
+  align-items: center; }
 
 .main-contacto form {
   display: flex;
@@ -84,94 +55,50 @@ h1 {
   min-height: 70vh;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 h1 {
   text-align: center;
   padding: 15px;
   font-size: 1.4;
-}
+  background-color: #c4d4ab; }
 
 h2 {
   text-align: center;
-  padding: 15px;
-}
+  padding: 15px; }
 
 h3 {
   text-align: center;
-  background-color: #eff0d5;
-}
+  background-color: #eff0d5; }
 
 .seccion-1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.seccion-1 img {
-  width: 400px;
-  padding: 10px;
-}
-
-.seccion-1 p {
-  width: 400px;
-  padding: 10px;
-}
+  flex-wrap: wrap; }
+  .seccion-1 img {
+    width: 360px;
+    padding: 10px; }
+  .seccion-1 p {
+    width: 360px;
+    padding: 10px; }
 
 .seccion-2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
-}
-
-.seccion-2 img {
-  width: 400px;
-  padding: 10px;
-}
-
-.seccion-2 p {
-  width: 400px;
-  padding: 10px;
-}
+  flex-direction: row-reverse; }
+  .seccion-2 img {
+    width: 360px;
+    padding: 10px; }
+  .seccion-2 p {
+    width: 360px;
+    padding: 10px; }
 
 .ancho-maximo {
   width: 80%;
-  margin: auto;
-}
-
-.grid-padre {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "seccion1 seccion1 seccion1 aside"
-    "seccion1 seccion1 seccion1 aside"
-    "seccion1 seccion1 seccion1 aside"
-    "seccion1 seccion1 seccion1 aside";
-}
-
-.aside {
-  grid-area: aside;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.aside img {
-  width: 300px;
-  height: 100%;
-}
-
-.seccion1 {
-  grid-area: seccion1;
-}
-
-.seccion-1 video {
-  width: 300px;
-}
+  margin: auto; }
 
 input {
   border-radius: 5px;
@@ -179,31 +106,23 @@ input {
   padding: 2px;
   border: 2px solid black;
   font-size: 30px;
-  box-shadow: inset 0 0 5px #87b091;
-}
-
-input [type="text"] {
-  height: 30px;
-  background-color: #c4d4ab;
-  color: #171430;
-  display: block;
-  margin: 0 auto;
-}
-
-input:focus {
-  box-shadow: 0 0 5px 3px;
-}
+  box-shadow: inset 0 0 5px #87b091; }
+  input [type="text"] {
+    height: 30px;
+    background-color: #c4d4ab;
+    color: #171430;
+    display: block;
+    margin: 0 auto; }
+  input:focus {
+    box-shadow: 0 0 5px 3px; }
 
 input::placeholder {
   color: #171430;
   text-shadow: 0 2px 5px black;
-  text-transform: capitalize;
-}
-
-input::placeholder:focus {
-  box-shadow: 0 2px 5px;
-  height: 300px;
-}
+  text-transform: capitalize; }
+  input::placeholder:focus {
+    box-shadow: 0 2px 5px;
+    height: 300px; }
 
 textarea {
   transition: 0.7s;
@@ -212,24 +131,19 @@ textarea {
   padding: 2px;
   border: 2px solid black;
   font-size: 30px;
-  box-shadow: inset 0 0 5px #87b091;
-}
-
-textarea:focus {
-  box-shadow: 0 2px 5px;
-  height: 300px;
-}
+  box-shadow: inset 0 0 5px #87b091; }
+  textarea:focus {
+    box-shadow: 0 2px 5px;
+    height: 300px; }
 
 textarea::placeholder {
   color: #171430;
   text-shadow: 0 2px 5px black;
-  text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
 .accordion-body {
   background-color: #87b091;
-  color: white;
-}
+  color: white; }
 
 .contenedor-fotos {
   display: grid;
@@ -239,38 +153,77 @@ textarea::placeholder {
   justify-content: center;
   align-content: center;
   align-items: center;
-  justify-items: center;
-}
+  justify-items: center; }
 
 section img {
   width: 300px;
-  height: 200px;
-}
+  height: 200px; }
 
-.parrafo1{
-  display:flex;
+.parrafo1 {
+  display: flex;
   text-align: center;
-  padding-top: 10px;
-}
+  padding-top: 10px; }
+
+.pollo-icon {
+  filter: grayscale(100%); }
+
+.carne-icon {
+  filter: grayscale(100%); }
+
+.fideos-icon {
+  filter: grayscale(100%); }
+
+.silvestre-icon {
+  filter: grayscale(100%); }
+
+.miel-icon {
+  filter: grayscale(100%); }
+
+.romero-icon {
+  filter: grayscale(100%); }
+
+.sanguche-icon {
+  filter: grayscale(100%); }
+
+.frutas-icon {
+  filter: grayscale(100%); }
+
+.huevo-icon {
+  filter: grayscale(100%); }
+
+.pollo-icon:hover {
+  filter: grayscale(0%); }
+
+.carne-icon:hover {
+  filter: grayscale(0%); }
+
+.fideos-icon:hover {
+  filter: grayscale(0%); }
+
+.silvestre-icon:hover {
+  filter: grayscale(0%); }
+
+.miel-icon:hover {
+  filter: grayscale(0%); }
+
+.romero-icon:hover {
+  filter: grayscale(0%); }
+
+.sanguche-icon:hover {
+  filter: grayscale(0%); }
+
+.frutas-icon:hover {
+  filter: grayscale(0%); }
+
+.huevo-icon:hover {
+  filter: grayscale(0%); }
+
 @media (max-width: 768px) {
   .contenedor-fotos {
     display: flex;
     align-items: center;
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
+
 @media (max-width: 519px) {
   .header {
-    justify-content: center;
-  }
-}
-/*
-@media(min-width: 425px) {
-  .main-inicio {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-}
-*/
+    justify-content: center; } }

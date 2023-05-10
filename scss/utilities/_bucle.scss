@@ -1,0 +1,11 @@
+@each $comida in pollo, carne, fideos, silvestre, miel, romero, sanguche, frutas, huevo{
+    .#{$comida}-icon {
+        filter:grayscale(100%)
+    }
+} 
+
+@each $comida in pollo, carne, fideos, silvestre, miel, romero, sanguche, frutas, huevo{
+    .#{$comida}-icon:hover{
+        filter:grayscale(0%)
+    }
+}

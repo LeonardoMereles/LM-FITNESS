@@ -1,0 +1,18 @@
+.seccion-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    img {
+        width: 360px;
+        padding: 10px;
+    }
+
+    p {
+        width: 360px;
+        padding: 10px;
+
+    }
+}
