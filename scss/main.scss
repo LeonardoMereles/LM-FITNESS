@@ -3,7 +3,6 @@
 @import "./utilities/mediaqueris";
 @import "./utilities/reset";
 
-@import "./secciones/fondos";
 @import "./secciones/header";
 @import "./secciones/footer";
 @import "./secciones/formulario";
@@ -15,3 +14,30 @@
 @import "./secciones/section-img";
 @import "./secciones/contenedor-fts";
 @import "./secciones/parrafo-1";
+
+.fondo-inicio{
+    background-image: url(../recursos/rsz_header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo-ejercicios{
+    background-image: url(../recursos/rsz_ejercicios.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo-nutrición{
+    background-image: url(../recursos/rsz_nutrición.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo-anatomía{
+    background-image: url(../recursos/rsz_anatomía.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fondo-contacto{
+    background-image: url(../recursos/rsz_contacto.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*estos fondos los coloco acá para poder linkearlos, sino, no me funcionaban estas imágenes*/
