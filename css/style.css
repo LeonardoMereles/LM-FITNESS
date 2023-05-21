@@ -1,169 +1,4 @@
-.header {
-  background-color: #87b091; }
-  .header nav {
-    display: flex;
-    align-items: flex-end; }
-  .header img {
-    height: 200px;
-    width: 200px; }
-
-.nav-item:hover:hover {
-  transform: scale(1.25);
-  transition: 0.3s; }
-
-.footer {
-  display: flex;
-  background-color: #171430;
-  color: white;
-  min-height: 10vh;
-  justify-content: center;
-  align-items: center; }
-  .footer .sociales {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center; }
-    .footer .sociales li {
-      display: inline-block; }
-
-.main-inicio {
-  display: flex;
-  background-color: #eff0d5;
-  min-height: 70vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.main-ejercicios {
-  display: flex;
-  background-color: #eff0d5;
-  min-height: 70vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.main-anatomia {
-  display: flex;
-  background-color: #eff0d5;
-  min-height: 70vh;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-
-.main-contacto form {
-  display: flex;
-  background-color: #eff0d5;
-  min-height: 70vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-h1 {
-  text-align: center;
-  padding: 15px;
-  font-size: 1.4;
-  background-color: #c4d4ab; }
-
-h2 {
-  text-align: center;
-  padding: 15px; }
-
-h3 {
-  text-align: center;
-  background-color: #eff0d5; }
-
-.seccion-1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .seccion-1 img {
-    width: 360px;
-    padding: 10px; }
-  .seccion-1 p {
-    width: 360px;
-    padding: 10px; }
-
-.seccion-2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row-reverse; }
-  .seccion-2 img {
-    width: 360px;
-    padding: 10px; }
-  .seccion-2 p {
-    width: 360px;
-    padding: 10px; }
-
-.ancho-maximo {
-  width: 80%;
-  margin: auto; }
-
-input {
-  border-radius: 5px;
-  text-align: center;
-  padding: 2px;
-  border: 2px solid black;
-  font-size: 30px;
-  box-shadow: inset 0 0 5px #87b091; }
-  input [type="text"] {
-    height: 30px;
-    background-color: #c4d4ab;
-    color: #171430;
-    display: block;
-    margin: 0 auto; }
-  input:focus {
-    box-shadow: 0 0 5px 3px; }
-
-input::placeholder {
-  color: #171430;
-  text-shadow: 0 2px 5px black;
-  text-transform: capitalize; }
-  input::placeholder:focus {
-    box-shadow: 0 2px 5px;
-    height: 300px; }
-
-textarea {
-  transition: 0.7s;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2px;
-  border: 2px solid black;
-  font-size: 30px;
-  box-shadow: inset 0 0 5px #87b091; }
-  textarea:focus {
-    box-shadow: 0 2px 5px;
-    height: 300px; }
-
-textarea::placeholder {
-  color: #171430;
-  text-shadow: 0 2px 5px black;
-  text-transform: capitalize; }
-
-.accordion-body {
-  background-color: #87b091;
-  color: white; }
-
-.contenedor-fotos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 40px;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-items: center; }
-
-section img {
-  width: 300px;
-  height: 200px; }
-
-.parrafo1 {
-  display: flex;
-  text-align: center;
-  padding-top: 10px; }
-
+@charset "UTF-8";
 .pollo-icon {
   filter: grayscale(100%); }
 
@@ -227,3 +62,234 @@ section img {
 @media (max-width: 519px) {
   .header {
     justify-content: center; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika Negative', sans-serif; }
+
+.fondo-inicio {
+  background-image: url(/recursos/rsz_header.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.fondo-ejercicios {
+  background-image: url(/recursos/rsz_ejercicios.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.fondo-nutrición {
+  background-image: url(/recursos/rsz_nutrición.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.fondo-anatomía {
+  background-image: url(/recursos/rsz_anatomía.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.fondo-contacto {
+  background-image: url(/recursos/rsz_contacto.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.header {
+  min-height: 15vh;
+  background-size: cover;
+  background-attachment: fixed; }
+  .header nav {
+    display: flex;
+    align-items: flex-end; }
+  .header img {
+    height: 200px;
+    width: 200px; }
+
+.nav-item:hover:hover {
+  transform: scale(1.25);
+  transition: 0.3s; }
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: #1212124a;
+  border: var(--bs-border-width) solid black;
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition); }
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: black;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out; }
+
+.footer {
+  display: flex;
+  background-color: #171430dc;
+  color: white;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center; }
+  .footer .sociales {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center; }
+    .footer .sociales li {
+      display: inline-block; }
+
+.form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative; }
+  .form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2; }
+  .form input:focus {
+    border-bottom: 2px solid #78788c; }
+
+.enviar {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s; }
+
+.enviar:hover {
+  background: #78788c;
+  color: #fff; }
+
+.main-inicio {
+  display: flex;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-ejercicios {
+  display: flex;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.main-anatomia {
+  display: flex;
+  min-height: 70vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.4; }
+
+h2 {
+  text-align: center;
+  padding: 15px; }
+
+h3 {
+  text-align: center;
+  background-color: #eff0d5; }
+
+.seccion-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .seccion-1 img {
+    width: 360px;
+    padding: 10px; }
+  .seccion-1 p {
+    width: 360px;
+    padding: 10px; }
+
+.seccion-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; }
+  .seccion-2 img {
+    width: 360px;
+    padding: 10px; }
+  .seccion-2 p {
+    width: 360px;
+    padding: 10px; }
+
+.ancho-maximo {
+  width: 80%;
+  margin: auto; }
+
+.accordion-body {
+  background-color: #171430dc;
+  color: white; }
+  .accordion-body img {
+    display: flex;
+    max-width: 80%;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3); }
+
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: transparent;
+  border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color); }
+
+section img {
+  width: 300px;
+  height: 200px;
+  border-radius: 40px;
+  transition: transform .2s; }
+
+.contenedor-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  position: relative; }
+
+@media (max-width: 768px) {
+  .contenedor-fotos {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 480px) {
+  .contenedor-fotos {
+    grid-template-columns: 1fr; } }
+
+.parrafo1 {
+  display: flex;
+  text-align: center;
+  padding-top: 10px; }

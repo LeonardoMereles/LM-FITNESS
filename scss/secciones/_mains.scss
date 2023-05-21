@@ -1,35 +1,29 @@
 .main-inicio {
     display: flex;
-    background-color: #eff0d5;
     min-height: 70vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main-ejercicios {
     display: flex;
-    background-color: #eff0d5;
     min-height: 70vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
 
 .main-anatomia {
     display: flex;
-    background-color: #eff0d5;
     min-height: 70vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.main-contacto form {
-    display: flex;
-    background-color: #eff0d5;
-    min-height: 70vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+

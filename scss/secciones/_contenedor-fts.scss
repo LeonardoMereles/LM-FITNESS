@@ -7,4 +7,18 @@
     align-content: center;
     align-items: center;
     justify-items: center;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-fotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-fotos {
+        grid-template-columns: 1fr;
+    }
 }

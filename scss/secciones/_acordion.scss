@@ -3,9 +3,21 @@
     margin: auto;
 }
 
-
-
 .accordion-body {
-    background-color: $verdozo;
+    background-color: $azulado;
     color: $blanco;
+    img{
+        display: flex;
+        max-width: 80%;
+        width: 500px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 40px;
+        box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+    }
+}
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: transparent;
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
 }

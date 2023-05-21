@@ -1,54 +1,42 @@
-input {
-    border-radius: 5px;
-    text-align: center;
-    padding: 2px;
-    border: 2px solid $negro;
-    font-size: 30px;
-    box-shadow: inset 0 0 5px #87b091;
-
-    [type="text"] {
-        height: 30px;
-        background-color: #c4d4ab;
-        color: #171430;
-        display: block;
-        margin: 0 auto;
+.form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    position: relative;
+    input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all 0.3s;
+        border-bottom: 2px solid #bebed2;
+       
     }
 
-    &:focus {
-        box-shadow: 0 0 5px 3px;
-    }
+    input:focus {
+    border-bottom: 2px solid #78788c;
 }
-
-input::placeholder {
-    color: $azulado;
-    text-shadow: 0 2px 5px $negro;
-    text-transform: capitalize;
-
-    &:focus {
-        box-shadow: 0 2px 5px;
-        height: 300px;
-
-    }
 }
-
-textarea {
-    transition: 0.7s;
-    border-radius: 5px;
-    text-align: center;
-    padding: 2px;
-    border: 2px solid $negro;
-    font-size: 30px;
-    box-shadow: inset 0 0 5px #87b091;
-
-    &:focus {
-        box-shadow: 0 2px 5px;
-        height: 300px;
-
-    }
-}
-
-textarea::placeholder {
-    color: $azulado;
-    text-shadow: 0 2px 5px $negro;
-    text-transform: capitalize;
-}
+.enviar{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .enviar:hover {
+    background: #78788c;
+    color: #fff;
+  }
